@@ -8,7 +8,8 @@ phases:
         - echo  "Buildind"
         - mvn clean compile package
      pos_build:
-       - echo "Pos building"
+       commands:
+       - echo "Pos Building"
        - mv target/*.war ./ROOT.war
    artifacts:
       files:
