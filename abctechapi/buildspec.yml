@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+   pre_build:
+     commands:
+       - echo "Pré build phase - exemplo baixar dependencias, certificados,  etc"
+     build:
+      commands:
+        - echo  "Buildind"
+        - mvn clean compile package
+     pos_build:
+       - echo "Pos building"
+       - mv target/*.war ./ROOT.war
+     artifacts:
+       files:
+         - ROOT.war
