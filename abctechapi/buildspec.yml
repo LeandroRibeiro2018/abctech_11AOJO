@@ -10,6 +10,6 @@ phases:
      pos_build:
        - echo "Pos building"
        - mv target/*.war ./ROOT.war
-     artifacts:
-       files:
-         - ROOT.war
+artifacts:
+  files:
+    - ROOT.war
