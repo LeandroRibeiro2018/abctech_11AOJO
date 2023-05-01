@@ -7,3 +7,5 @@ spring:
         password:
         username: sa
         uri: jdbc:h2:mem:abc_tech
+      flyway:
+        enabled: false
