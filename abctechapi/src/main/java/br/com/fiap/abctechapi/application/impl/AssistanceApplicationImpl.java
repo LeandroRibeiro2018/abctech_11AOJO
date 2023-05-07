@@ -1,7 +1,7 @@
 package br.com.fiap.abctechapi.application.impl;
 
 import br.com.fiap.abctechapi.application.AssistanceApplication;
-import br.com.fiap.abctechapi.application.dto.AssistDto;
+import br.com.fiap.abctechapi.application.dto.AssistResponseDto;
 import br.com.fiap.abctechapi.service.AssistanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,12 +20,12 @@ public class AssistanceApplicationImpl implements AssistanceApplication {
     }
 
     @Autowired
-    public List<AssistDto> getAssists(){
-        List<AssistDto> assistDtos = this.assistanceService.getAssists()
+    public List<AssistResponseDto> getAssists(){
+        List<AssistResponseDto> assistResponseDtos = this.assistanceService.getAssists()
                 .stream()
-                .map(o-> new AssistDto(o.getId(),o.getName(), o.getDescription()))
+                .map(o-> new AssistResponseDto(o.getId(),o.getName(), o.getDescription()))
                 .collect(Collectors.toList());
-        return assistDtos;
+        return assistResponseDtos;
     }
 
 }
