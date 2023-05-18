@@ -19,7 +19,7 @@ public class AssistanceApplicationImpl implements AssistanceApplication {
            this.assistanceService =assistanceService;
     }
 
-    @Autowired
+    @Override
     public List<AssistResponseDto> getAssists(){
         List<AssistResponseDto> assistResponseDtos = this.assistanceService.getAssists()
                 .stream()

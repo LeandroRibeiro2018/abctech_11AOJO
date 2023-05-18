@@ -18,6 +18,7 @@ public class HealthCheckController {
 
     private VersionComponent versionComponent;
 
+
     public HealthCheckController(@Autowired VersionComponent versionComponent){
         this.versionComponent = versionComponent;
     }
