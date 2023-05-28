@@ -21,16 +21,16 @@ public class OrderApplicationImpl implements OrderApplication {
     @Override
     public void createOrder(OrderDto orderDto) throws Exception{
         Order order = new  Order();
-        order.setOperadorId(orderDto.getOperadorId());
+        order.setOperatorId(orderDto.getOperatorId());
         order.setStartOrderLocation(new OrderLocation(null,
                 orderDto.getStart().getLatitude(),
                 orderDto.getStart().getLongitude(),
-                new Timestamp(orderDto.getStart().getDate().getTime())));
+                new Timestamp(orderDto.getStart().getDateTime().getTime())));
 
         order.setEndOrderLocation(new OrderLocation(null,
                 orderDto.getEnd().getLatitude(),
                 orderDto.getEnd().getLongitude(),
-                new Timestamp(orderDto.getEnd().getDate().getTime())));
+                new Timestamp(orderDto.getEnd().getDateTime().getTime())));
         this.orderService.saveOrder(order, orderDto.getServices());
     }
 }

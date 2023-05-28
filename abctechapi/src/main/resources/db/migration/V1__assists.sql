@@ -11,3 +11,14 @@ INSERT INTO assistances (name, description) VALUES ('Troca de fiação interna',
 INSERT INTO assistances (name, description) VALUES ('Manutenção em fogão', 'Reparo sem necessidade de compra de peças');
 INSERT INTO assistances (name, description) VALUES ('Manutenção em geladeira', 'Reparo sem necessidade de compra de peças');
 INSERT INTO assistances (name, description) VALUES ('Manutenção em máquina de lavar', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Troca de aparelho', 'Troca de tambor maquina consul');
+INSERT INTO assistances (name, description) VALUES ('Reparo de Gerladeira', 'Verificação do Gaz da Geladeira');
+INSERT INTO assistances (name, description) VALUES ('Troca de fio de Maquina', 'Substituição de fiação interna da residência');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em Micorondas', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em Forno eletrico', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em máquina de lava e seca ', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Troca de tampa de maquina ', 'Troca de tampa de maquina');
+INSERT INTO assistances (name, description) VALUES ('Troca de fiação exterma', 'Substituição de fiação externa da residência');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em forno eletrico', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em geladeira Frost-Free', 'Reparo sem necessidade de compra de peças');
+INSERT INTO assistances (name, description) VALUES ('Manutenção em máquina de Secar', 'Reparo sem necessidade de compra de peças');

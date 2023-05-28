@@ -20,8 +20,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="operador_id", nullable = false)
-    private Long operadorId;
+    @Column(name="operator_id", nullable = false)
+    private Long operatorId;
 
     @ManyToMany
     private List<Assistance> assists;

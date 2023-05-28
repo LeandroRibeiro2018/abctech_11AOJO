@@ -15,7 +15,7 @@ import java.util.List;
 public class OrderDto {
 
     @NonNull
-    public Long operadorId;
+    public Long operatorId;
 
     @NotEmpty
     private List<Long> services;
